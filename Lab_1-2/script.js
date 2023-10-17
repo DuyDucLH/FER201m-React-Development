@@ -1,0 +1,1605 @@
+const studentData = [{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee2e"
+	},
+	"name": "Betty Schaefer-fake",
+	"email": "Carlos_Schuster@hotmail.com",
+	"language": [
+		"French",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "408-888-7546 x43178",
+	"address": "2962 Huel Passage",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee2f"
+	},
+	"name": "Maryann Mitchell-fake",
+	"email": "Javier.Nienow20@gmail.com",
+	"language": [
+		"English",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "(367) 607-6174 x27864",
+	"address": "11997 Charlene Plaza",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee30"
+	},
+	"name": "Barry Bahringer-fake",
+	"email": "Forrest_VonRueden16@hotmail.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "(847) 398-9115 x115",
+	"address": "10902 Hammes Courts",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee31"
+	},
+	"name": "Kayla Christiansen-fake",
+	"email": "Neoma.Hilll@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "1-374-896-9595 x97972",
+	"address": "7994 Thiel Ranch",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee32"
+	},
+	"name": "Elvira Ortiz-fake",
+	"email": "Otilia.Gusikowski59@hotmail.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "462-835-3655 x609",
+	"address": "11524 Lilliana Ridge",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee33"
+	},
+	"name": "Cecilia Kunde-fake",
+	"email": "William29@gmail.com",
+	"language": [
+		"French",
+		"Korean"
+	],
+	"gender": "Male",
+	"phoneNumber": "827.783.2118 x7372",
+	"address": "840 Carlie Knoll",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee34"
+	},
+	"name": "Alison Bednar-Nitzsche-fake",
+	"email": "Buster43@yahoo.com",
+	"language": [
+		"Vietnamese",
+		"Korean"
+	],
+	"gender": "Male",
+	"phoneNumber": "1-730-272-0183",
+	"address": "794 Annabelle Mills",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee35"
+	},
+	"name": "Mike Bechtelar-fake",
+	"email": "Davon_Hintz66@gmail.com",
+	"language": [
+		"English",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "1-739-650-6548 x61349",
+	"address": "63527 Hunter Glen",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee36"
+	},
+	"name": "Janis Hoeger-fake",
+	"email": "Olga_Okuneva30@yahoo.com",
+	"language": [
+		"French",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "322-967-4775",
+	"address": "70895 Renner Ranch",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee37"
+	},
+	"name": "Julie Reichert-fake",
+	"email": "Eleonore_Huel@gmail.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "700-979-1915 x47590",
+	"address": "668 Halvorson Trace",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee38"
+	},
+	"name": "Bryant Fadel-fake",
+	"email": "Trever_Kunde@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "1-531-458-3380",
+	"address": "53954 Armstrong Court",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee39"
+	},
+	"name": "Lana Schiller-fake",
+	"email": "Taryn.Rogahn-Kutch28@gmail.com",
+	"language": [
+		"French",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "1-782-915-7328 x7660",
+	"address": "388 Rutherford Trace",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee3a"
+	},
+	"name": "Theodore Gibson-fake",
+	"email": "Ilene_Kuphal@hotmail.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "820.270.5549 x85802",
+	"address": "10694 Cleo Rue",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee3b"
+	},
+	"name": "Becky Barton-fake",
+	"email": "Jayce_Emmerich@gmail.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "945-794-7953 x500",
+	"address": "16315 Melyna Centers",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee3c"
+	},
+	"name": "Carolyn Dickinson-fake",
+	"email": "Charles85@yahoo.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "1-599-324-0903 x6689",
+	"address": "6210 Ezekiel Creek",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee3d"
+	},
+	"name": "Lindsay Shanahan-fake",
+	"email": "Augustus25@hotmail.com",
+	"language": [
+		"French",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "460-709-8469",
+	"address": "293 Nolan Rest",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee3e"
+	},
+	"name": "Joel Kilback-fake",
+	"email": "Alden.Moore72@yahoo.com",
+	"language": [
+		"French",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "769.392.3355 x640",
+	"address": "67561 Kulas Mount",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee3f"
+	},
+	"name": "Genevieve Murray-fake",
+	"email": "Eda42@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "525.425.2659 x37238",
+	"address": "40233 Tressa Ways",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee40"
+	},
+	"name": "Mr. Lloyd Treutel-fake",
+	"email": "Louvenia56@yahoo.com",
+	"language": [
+		"English",
+		"Korean"
+	],
+	"gender": "Male",
+	"phoneNumber": "230.956.8095 x17655",
+	"address": "6006 Blick Cliffs",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee41"
+	},
+	"name": "Lydia Reynolds-fake",
+	"email": "Casandra_Pagac@yahoo.com",
+	"language": [
+		"English",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "1-407-360-5922 x62345",
+	"address": "51115 Lee Manors",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee42"
+	},
+	"name": "Becky Ryan I-fake",
+	"email": "Haven2@yahoo.com",
+	"language": [
+		"English",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "1-905-221-1629 x48198",
+	"address": "7514 Quigley Avenue",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee43"
+	},
+	"name": "Jack Hand-fake",
+	"email": "Icie30@gmail.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "1-791-391-0621 x27177",
+	"address": "671 Angela Lock",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee44"
+	},
+	"name": "Rosie Kling-fake",
+	"email": "Kari.Christiansen0@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "514.758.8096 x36724",
+	"address": "6743 Donnelly Garden",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee45"
+	},
+	"name": "Allen Considine-fake",
+	"email": "Cornelius.Ziemann@hotmail.com",
+	"language": [
+		"French",
+		"Korean"
+	],
+	"gender": "Male",
+	"phoneNumber": "1-752-457-3091 x309",
+	"address": "5474 Vivien Ways",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee46"
+	},
+	"name": "Tammy Schroeder-fake",
+	"email": "Alize_Sawayn@hotmail.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "(894) 639-7058",
+	"address": "4123 Berge Prairie",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee47"
+	},
+	"name": "Ruben Runolfsson-fake",
+	"email": "Orval_Douglas@yahoo.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "(697) 458-6155 x2982",
+	"address": "74167 Sauer Harbors",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee48"
+	},
+	"name": "Florence Schmidt-fake",
+	"email": "Kayley_Lubowitz43@gmail.com",
+	"language": [
+		"English",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "345-523-8318",
+	"address": "4796 Gislason Alley",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee49"
+	},
+	"name": "Alberto Franecki-fake",
+	"email": "Robb66@yahoo.com",
+	"language": [
+		"English",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "254-457-7308 x43405",
+	"address": "2631 Katheryn Fort",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee4a"
+	},
+	"name": "Cecelia Walter-fake",
+	"email": "Samson34@yahoo.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "284-712-2265 x7722",
+	"address": "1958 Erick Harbor",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee4b"
+	},
+	"name": "Della Schneider I-fake",
+	"email": "Hardy_Fay76@yahoo.com",
+	"language": [
+		"English",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "681.978.7711 x27268",
+	"address": "81308 Kristina Ridge",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee4c"
+	},
+	"name": "Colleen Russel-fake",
+	"email": "Lolita_Mosciski@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "1-245-540-6342 x00771",
+	"address": "45973 Karl Crescent",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee4d"
+	},
+	"name": "Mrs. Belinda Pfannerstill-fake",
+	"email": "Carley_Reynolds16@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "226.606.6930",
+	"address": "6439 Wilbert Via",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee4e"
+	},
+	"name": "Lyle Waters-fake",
+	"email": "Guadalupe63@gmail.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "(465) 427-1104 x5913",
+	"address": "2851 Casper Coves",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee4f"
+	},
+	"name": "Holly Emmerich-fake",
+	"email": "Garett.Brekke52@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "295.658.4733 x08889",
+	"address": "2922 Flatley Harbors",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee50"
+	},
+	"name": "Latoya Hansen-fake",
+	"email": "Wilma.Renner@gmail.com",
+	"language": [
+		"English",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "729-935-5587 x17955",
+	"address": "347 Irwin Camp",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee51"
+	},
+	"name": "Mable Smith V-fake",
+	"email": "Elsie28@yahoo.com",
+	"language": [
+		"Vietnamese",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "958-488-4536 x7689",
+	"address": "5205 Kuhn Point",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee52"
+	},
+	"name": "Jeanne Morissette-fake",
+	"email": "Melyssa_Schinner-Powlowski62@hotmail.com",
+	"language": [
+		"French",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "771.719.3204 x5657",
+	"address": "4711 Freeda Rapids",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee53"
+	},
+	"name": "Estelle Gerlach-fake",
+	"email": "Karolann_Breitenberg@yahoo.com",
+	"language": [
+		"Vietnamese",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "(378) 973-1045 x37291",
+	"address": "303 Mante Ports",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee54"
+	},
+	"name": "Dr. Steve Schinner-fake",
+	"email": "Rosalind49@yahoo.com",
+	"language": [
+		"English",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "1-280-701-5500 x73534",
+	"address": "720 Cummerata Forks",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee55"
+	},
+	"name": "Tracy Heaney-fake",
+	"email": "Peter0@hotmail.com",
+	"language": [
+		"English",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "722.736.4138",
+	"address": "22161 Rocky Greens",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee56"
+	},
+	"name": "Clinton Luettgen-fake",
+	"email": "Linnie_Wuckert@hotmail.com",
+	"language": [
+		"English",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "633.661.1683 x40743",
+	"address": "450 Klocko Causeway",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee57"
+	},
+	"name": "Monica Kuphal-fake",
+	"email": "Neal.Gutkowski98@yahoo.com",
+	"language": [
+		"English",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "914.460.8915 x906",
+	"address": "191 Israel Ridge",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee58"
+	},
+	"name": "Jacquelyn Morar-fake",
+	"email": "Kory.Fay@hotmail.com",
+	"language": [
+		"English",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "(791) 212-7158 x4061",
+	"address": "990 Blick Mills",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee59"
+	},
+	"name": "Ms. Johanna Marquardt-fake",
+	"email": "Myah_Satterfield4@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "447.792.9781 x4772",
+	"address": "724 Hoppe Cliff",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee5a"
+	},
+	"name": "Antonia Gutmann-fake",
+	"email": "Isaiah.Bosco@hotmail.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "421-916-4542 x10892",
+	"address": "174 Jayde Forks",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee5b"
+	},
+	"name": "Perry Jones-fake",
+	"email": "Nat_Kirlin93@hotmail.com",
+	"language": [
+		"Vietnamese",
+		"Korean"
+	],
+	"gender": "Male",
+	"phoneNumber": "1-695-593-5220 x40843",
+	"address": "9543 Parker Forks",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee5c"
+	},
+	"name": "Myra Reinger-fake",
+	"email": "Arjun.Harber@yahoo.com",
+	"language": [
+		"English",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "306.226.8839 x23294",
+	"address": "974 Ferne Route",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee5d"
+	},
+	"name": "Pamela Hodkiewicz-fake",
+	"email": "Tremaine_Beier@gmail.com",
+	"language": [
+		"English",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "341-957-3404",
+	"address": "694 Bogan Crest",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee5e"
+	},
+	"name": "Blake Senger-fake",
+	"email": "Kadin19@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "600.687.2500 x013",
+	"address": "619 Herzog Center",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee5f"
+	},
+	"name": "Billy Littel-fake",
+	"email": "Aubrey.Gerlach@yahoo.com",
+	"language": [
+		"French",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "533.362.0556 x15325",
+	"address": "8158 Obie Ramp",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee60"
+	},
+	"name": "Johnathan Stehr Sr.-fake",
+	"email": "Brandyn.Casper@hotmail.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "1-791-583-5256",
+	"address": "9301 Marie Ridges",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee61"
+	},
+	"name": "Zachary O'Keefe-fake",
+	"email": "Montana_Hane67@gmail.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "(935) 963-3009 x86818",
+	"address": "49838 Kulas Port",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee62"
+	},
+	"name": "Alberto Carter-fake",
+	"email": "Ursula50@gmail.com",
+	"language": [
+		"English",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "(393) 254-4994 x77064",
+	"address": "307 Dominic Branch",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee63"
+	},
+	"name": "Dave Jacobi-fake",
+	"email": "Candace55@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "525-312-7318",
+	"address": "9619 Carter Grove",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee64"
+	},
+	"name": "Dr. Darryl Leuschke-fake",
+	"email": "Mariah69@hotmail.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "329.943.9639 x91614",
+	"address": "76100 Conrad Forge",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee65"
+	},
+	"name": "Mrs. Tamara Jacobi-fake",
+	"email": "Brandyn76@yahoo.com",
+	"language": [
+		"Vietnamese",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "(422) 808-0063 x968",
+	"address": "714 Bashirian Port",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee66"
+	},
+	"name": "Mrs. Harriet Wisoky-fake",
+	"email": "Ezequiel25@hotmail.com",
+	"language": [
+		"Vietnamese",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "(782) 257-1100 x9081",
+	"address": "41438 Ceasar Fort",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee67"
+	},
+	"name": "Mrs. Jeannette Hammes-fake",
+	"email": "Ole_Collier79@gmail.com",
+	"language": [
+		"English",
+		"Korean"
+	],
+	"gender": "Male",
+	"phoneNumber": "427.431.5248 x7183",
+	"address": "53576 Ted Heights",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee68"
+	},
+	"name": "Frankie Huel I-fake",
+	"email": "Lelah1@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "1-502-282-7678 x90566",
+	"address": "895 Chaz Trace",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee69"
+	},
+	"name": "Winston Aufderhar-fake",
+	"email": "Mohammad5@yahoo.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "1-651-356-9180 x193",
+	"address": "3299 Marjorie Grove",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee6a"
+	},
+	"name": "Ms. Mandy Stanton-fake",
+	"email": "Elliott.Crona@yahoo.com",
+	"language": [
+		"French",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "355.275.0966 x59275",
+	"address": "91300 Arianna Club",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee6b"
+	},
+	"name": "Nora Leffler-Kunde-fake",
+	"email": "Vilma_Mann57@gmail.com",
+	"language": [
+		"English",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "1-819-787-0017 x601",
+	"address": "3788 Stan Garden",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee6c"
+	},
+	"name": "Phillip Ankunding-fake",
+	"email": "Chanel_Harber@yahoo.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "1-650-458-4957 x9368",
+	"address": "3735 Rolfson Underpass",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee6d"
+	},
+	"name": "Miss Nancy Ernser-fake",
+	"email": "Julia55@yahoo.com",
+	"language": [
+		"English",
+		"Korean"
+	],
+	"gender": "Male",
+	"phoneNumber": "804-825-3359 x40238",
+	"address": "16593 Zboncak Isle",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee6e"
+	},
+	"name": "Juanita Rosenbaum-Bashirian-fake",
+	"email": "Gladyce_Kihn@hotmail.com",
+	"language": [
+		"Vietnamese",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "1-356-302-9882 x53409",
+	"address": "17591 Rosalee Square",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee6f"
+	},
+	"name": "Paul Jenkins-fake",
+	"email": "Eleonore.Boehm@yahoo.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "1-840-663-4276",
+	"address": "4652 Ratke Manors",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee70"
+	},
+	"name": "Bryant Schmidt-fake",
+	"email": "Margot.Abbott@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "570.333.4606",
+	"address": "90216 Krajcik Alley",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee71"
+	},
+	"name": "Elisa Kutch II-fake",
+	"email": "Dario.Denesik@gmail.com",
+	"language": [
+		"English",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "956-414-2489 x085",
+	"address": "14777 Rey Mission",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee72"
+	},
+	"name": "Ramiro Kihn-fake",
+	"email": "Sydni_Jakubowski@yahoo.com",
+	"language": [
+		"Vietnamese",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "(308) 306-7759 x119",
+	"address": "5353 Clyde Knoll",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee73"
+	},
+	"name": "Donald Becker-fake",
+	"email": "Tamia69@hotmail.com",
+	"language": [
+		"Vietnamese",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "698-824-9425 x487",
+	"address": "59938 Ortiz View",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee74"
+	},
+	"name": "Mrs. Sandy Gulgowski-fake",
+	"email": "Nya89@hotmail.com",
+	"language": [
+		"English",
+		"Korean"
+	],
+	"gender": "Male",
+	"phoneNumber": "980.299.6364",
+	"address": "169 Margaretta Field",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee75"
+	},
+	"name": "Kristy Kirlin-fake",
+	"email": "Katherine.VonRueden@yahoo.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "836-322-9860 x087",
+	"address": "4623 Erik Crest",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee76"
+	},
+	"name": "Ms. Sue Johns-fake",
+	"email": "Americo_Gusikowski@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "700-754-2384 x50083",
+	"address": "8883 Malachi Dale",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee77"
+	},
+	"name": "Janet Howell-fake",
+	"email": "Jimmy_Lang63@yahoo.com",
+	"language": [
+		"English",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "649-293-4702 x5765",
+	"address": "34618 Prosacco Club",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee78"
+	},
+	"name": "April Marquardt-fake",
+	"email": "Darryl.Kozey5@yahoo.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "(965) 460-8399",
+	"address": "33986 Reed Pines",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee79"
+	},
+	"name": "Laura Stamm-fake",
+	"email": "Eloy.Hilll@yahoo.com",
+	"language": [
+		"English",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "600-819-7816 x93003",
+	"address": "401 Reese Spring",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee7a"
+	},
+	"name": "Cecilia Heathcote-fake",
+	"email": "Betsy7@gmail.com",
+	"language": [
+		"English",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "836.937.7145 x735",
+	"address": "3789 Florine Union",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee7b"
+	},
+	"name": "Ervin Torp-fake",
+	"email": "Velma_Gleason@hotmail.com",
+	"language": [
+		"French",
+		"Korean"
+	],
+	"gender": "Male",
+	"phoneNumber": "884.694.2608 x880",
+	"address": "138 Anabel Underpass",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee7c"
+	},
+	"name": "Clay Koch-fake",
+	"email": "Hadley92@hotmail.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "(671) 793-2788 x13003",
+	"address": "2247 Turcotte Key",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee7d"
+	},
+	"name": "Shannon Hagenes-fake",
+	"email": "Josie_Prosacco@yahoo.com",
+	"language": [
+		"Vietnamese",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "511.376.9555 x11404",
+	"address": "9524 Sipes Knoll",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee7e"
+	},
+	"name": "Debbie Considine-fake",
+	"email": "Kristina.Schaden1@yahoo.com",
+	"language": [
+		"English",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "805.596.9115 x970",
+	"address": "37144 Mina Plains",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee7f"
+	},
+	"name": "Miss Elvira Weimann-fake",
+	"email": "Anderson92@hotmail.com",
+	"language": [
+		"Vietnamese",
+		"Korean"
+	],
+	"gender": "Male",
+	"phoneNumber": "833-456-2669 x03596",
+	"address": "2525 Filomena Circle",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee80"
+	},
+	"name": "Whitney Koelpin-fake",
+	"email": "Dusty15@hotmail.com",
+	"language": [
+		"English",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "274.643.3650 x3705",
+	"address": "850 Tyler Points",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee81"
+	},
+	"name": "Mr. Adam Cummerata-fake",
+	"email": "Dangelo_Collier@yahoo.com",
+	"language": [
+		"French",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "404.720.8033",
+	"address": "599 Yost Forge",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee82"
+	},
+	"name": "Leslie Mayer-fake",
+	"email": "Noble.Altenwerth67@hotmail.com",
+	"language": [
+		"Vietnamese",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "668-924-2548 x35697",
+	"address": "171 Kling Rapid",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee83"
+	},
+	"name": "Cristina Hermiston-fake",
+	"email": "Moses82@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Korean"
+	],
+	"gender": "Male",
+	"phoneNumber": "820-271-2420 x8949",
+	"address": "92818 Kaley Brook",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee84"
+	},
+	"name": "Ms. Tricia Maggio PhD-fake",
+	"email": "Sammie94@hotmail.com",
+	"language": [
+		"English",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "762-235-4391 x2314",
+	"address": "42777 Alessia Unions",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee85"
+	},
+	"name": "April Waelchi-fake",
+	"email": "Hyman47@gmail.com",
+	"language": [
+		"English",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "650.862.0156 x4931",
+	"address": "61224 Cronin Fork",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee86"
+	},
+	"name": "Ms. Charlene Leannon-fake",
+	"email": "Precious.Walsh63@gmail.com",
+	"language": [
+		"English",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "1-401-742-1683",
+	"address": "26894 Cooper Rest",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee87"
+	},
+	"name": "Martha Lang-fake",
+	"email": "Mathias91@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "528-359-2697 x58681",
+	"address": "58130 Eldora Key",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee88"
+	},
+	"name": "Shannon Rippin-Hintz-fake",
+	"email": "Mallory.Leannon-Leffler85@hotmail.com",
+	"language": [
+		"French",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "(220) 713-6141",
+	"address": "74244 Murazik Ports",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee89"
+	},
+	"name": "Cesar Hyatt-fake",
+	"email": "Cleora63@yahoo.com",
+	"language": [
+		"Vietnamese",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "1-897-247-6416 x45577",
+	"address": "663 Daisy Crest",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee8a"
+	},
+	"name": "Edward Romaguera-fake",
+	"email": "Ellie61@gmail.com",
+	"language": [
+		"Vietnamese",
+		"Japanese"
+	],
+	"gender": "Female",
+	"phoneNumber": "650-466-0221 x4355",
+	"address": "16487 Loren Well",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee8b"
+	},
+	"name": "Tom Schmitt-fake",
+	"email": "Gabe19@hotmail.com",
+	"language": [
+		"English",
+		"Korean"
+	],
+	"gender": "Male",
+	"phoneNumber": "952.208.3824 x48898",
+	"address": "706 Brandi Key",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee8c"
+	},
+	"name": "Billy Goldner-fake",
+	"email": "Kaleb.Wolff78@hotmail.com",
+	"language": [
+		"Vietnamese",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "(744) 801-5815 x95310",
+	"address": "161 Kuhlman Trafficway",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee8d"
+	},
+	"name": "Francis Howe-fake",
+	"email": "Chadrick_Boehm@hotmail.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "717-238-1397",
+	"address": "90336 Hagenes Land",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee8e"
+	},
+	"name": "John Jerde-fake",
+	"email": "Keshaun15@gmail.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Female",
+	"phoneNumber": "(336) 577-7166 x36149",
+	"address": "810 Heller Passage",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee8f"
+	},
+	"name": "Rodney Pagac-fake",
+	"email": "Hudson.Toy7@hotmail.com",
+	"language": [
+		"English",
+		"Korean"
+	],
+	"gender": "Female",
+	"phoneNumber": "993.380.1795 x6526",
+	"address": "3919 Queen Mews",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee90"
+	},
+	"name": "Frederick Muller-fake",
+	"email": "Laverne.Ankunding-Heaney@hotmail.com",
+	"language": [
+		"English",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "(667) 786-1533 x47605",
+	"address": "297 Jakubowski Extension",
+	"__v": 0
+},
+{
+	"_id": {
+		"$oid": "65106c83b2e8c08b68c2ee91"
+	},
+	"name": "Myrtle Hills-fake",
+	"email": "Rafael45@hotmail.com",
+	"language": [
+		"French",
+		"Chines"
+	],
+	"gender": "Male",
+	"phoneNumber": "350-852-5577",
+	"address": "1586 Streich Circles",
+	"__v": 0
+}];
+
+
+// showStudents(studentData);
+// showStudentsWithID('65106c83b2e8c08b68c2ee34', studentData);
+// showStudentsWithNameOrEmail('hotmail', studentData);
+// deleteStudentWithId('65106c83b2e8c08b68c2ee91', studentData);
+// sortAscendingWithName(studentData);
+
+const new_student = {
+	"_id": {
+		"$oid": ""
+	},
+	"name": "Duc Duy",
+	"email": "duylhdhe172114@fp.edu.vn",
+	"language": [
+		"Vietnamese",
+		"English",
+		"Japanese"
+	],
+	"gender": "Male",
+	"phoneNumber": "408-888-7546 x43178",
+	"address": "2962 Huel Passage",
+	"__v": 0
+};
+
+// updateStudent('65106c83b2e8c08b68c2ee87', studentData, new_student);
+// showStudentsWithID('65106c83b2e8c08b68c2ee87', studentData);
+
+function appendStudent(student, index) {
+	const tbody = document.getElementById('display-list');
+	const { _id, name, email, language, gender, phoneNumber, address } = student;
+	const tr = document.createElement('tr');
+	tr.appendChild(document.createElement('th')).textContent = index + 1;
+	tr.appendChild(document.createElement('td')).textContent = _id.$oid;
+	tr.appendChild(document.createElement('td')).textContent = name;
+	tr.appendChild(document.createElement('td')).textContent = email;
+	tr.appendChild(document.createElement('td')).textContent = language;
+	tr.appendChild(document.createElement('td')).textContent = gender;
+	tr.appendChild(document.createElement('td')).textContent = phoneNumber;
+	tr.appendChild(document.createElement('td')).textContent = address;
+	tbody.appendChild(tr);
+}
+
+function showStudents(listStudents) {
+	listStudents.forEach((student, index) => {
+		appendStudent(student, index);
+	});
+}
+
+function showStudentsWithID(id, listStudents) {
+	listStudents.find((student, index) => {
+		let { _id } = student;
+		if (_id.$oid === id) {
+			appendStudent(student, index);
+			return true;
+		}
+	}) === undefined ? console.log(`Student not found with id: ${id}`) : true;
+}
+
+function showStudentsWithNameOrEmail(keyword, listStudents) {
+	listStudents.filter((student, index) => {
+		const { name, email } = student;
+		if (name.includes(keyword) || email.includes(keyword)) {
+			appendStudent(student, index);
+			return true;
+		}
+	});
+}
+
+function deleteStudentWithId(id, listStudents) {
+	let newList = listStudents.filter((student) => {
+		const { _id } = student;
+		if (_id.$oid === id) {
+			return false;
+		} else {
+			return true;
+		}
+	});
+	showStudents(newList);
+}
+
+function sortAscendingWithName(listStudents) {
+	listStudents.sort((stu1, stu2) => {
+		const { name: name1 } = stu1;
+		const { name: name2 } = stu2;
+		if (name1 > name2) {
+			return 1;
+		} else if (name1 < name2) {
+			return -1;
+		} else {
+			return 0;
+		}
+	});
+	showStudents(listStudents);
+}
+
+function updateStudent(id, listStudents, new_student) {
+	new_student._id.$oid = id;
+	let oldStudentIndex = listStudents.findIndex(student => student._id.$oid === id);
+	if (oldStudentIndex > 0) {
+		listStudents[oldStudentIndex] = new_student;
+	} else {
+		console.log(`Student not found with id: ${id}`);
+	}
+}
