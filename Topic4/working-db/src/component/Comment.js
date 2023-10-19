@@ -8,13 +8,14 @@ export default function Comment() {
 
 	const [comments, setComments] = useState([]);
 
+	// sync
 	// useEffect(() => {
-	// 	//fetch with default GET method
 	// 	fetch("https://jsonplaceholder.typicode.com/posts/" + id + "/comments")
 	// 		.then(response => response.json())
 	// 		.then(json => setComments(json));
 	// }, []);
 
+	// async
 	useEffect(() => {
 		const fetchData = async () => {
 			const data = await fetch("https://jsonplaceholder.typicode.com/posts/" + id + "/comments");

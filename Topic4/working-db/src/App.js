@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Comment from "./component/Comment";
 import Header from "./component/Header";
 import Post from "./component/Post";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
