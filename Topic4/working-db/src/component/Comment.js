@@ -1,34 +1,32 @@
-import { Col, Row, Table } from 'react-bootstrap';
+import { Col, Row, Table, Container, Button } from 'react-bootstrap';
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export default function Comment() {
 
-	const { id } = useParams();
+	const { postId } = useParams();
 
 	const [comments, setComments] = useState([]);
 
 	// sync
-	// useEffect(() => {
-	// 	fetch("https://jsonplaceholder.typicode.com/posts/" + id + "/comments")
-	// 		.then(response => response.json())
-	// 		.then(json => setComments(json));
-	// }, []);
-
-	// async
 	useEffect(() => {
-		const fetchData = async () => {
-			const data = await fetch("https://jsonplaceholder.typicode.com/posts/" + id + "/comments");
-			const json = await data.json();
-			setComments(json);
-		}
-		fetchData();
-	}, [id]);
+		fetch("https://jsonplaceholder.typicode.com/posts/" + postId + "/comments")
+			.then(response => response.json())
+			.then(json => setComments(json))
+			.catch(err => console.log(err));
+	}, []);
 
 	return (
-		<Row>
-			<Col style={{ marginTop: '20px' }}>
-				<h2>Comment - postId: {id}</h2>
+		<Container>
+			<Row style={{ marginTop: '20px' }} className='align-items-end'>
+				<Col>
+					<h2>Comment - postId: {postId}</h2>
+				</Col>
+				<Col style={{textAlign: 'right'}}>
+					<Link to={`/posts/${postId}/comments/add`}>Create new Comment</Link>
+				</Col>
+			</Row>
+			<Row>
 				<Table style={{ marginTop: '30px' }}>
 					<thead>
 						<tr>
@@ -47,7 +45,8 @@ export default function Comment() {
 						))}
 					</tbody>
 				</Table>
-			</Col>
-		</Row>
+			</Row>
+			<Button as={Link} to={'/'}>Back To Home</Button>
+		</Container>
 	);
 }
