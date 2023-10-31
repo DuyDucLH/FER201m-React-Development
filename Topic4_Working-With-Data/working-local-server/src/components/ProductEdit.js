@@ -9,10 +9,16 @@ export default function ProductEdit() {
 
 	const [categories, setCategories] = useState([]);
 	const [product, setProduct] = useState({});
-	const [pName, setPName] = useState('');
-	const [pPrice, setPPrice] = useState(0);
-	const [pCategoryId, setPCategoryId] = useState(1);
 	const [messages, setMessages] = useState([]);
+	const [isUpdate, setIsUpdate] = useState(false);
+
+	function handleChange(e) {
+		setProduct({
+			...product,
+			[e.target.name]: e.target.value
+		});
+		setIsUpdate(true);
+	}
 
 
 	useEffect(() => {
@@ -26,16 +32,7 @@ export default function ProductEdit() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		axios.post('http://localhost:9999/products', {
-			name: pName,
-			price: parseInt(pPrice),
-			categoryId: parseInt(pCategoryId)
-		}).then(res => {
-			if (res.status === 201) {
-				setMessages(['Product edited successfully']);
-			}
-			console.log(res.data);
-		}).catch(err => console.log(err));
+		
 	}
 
 	return (
@@ -46,24 +43,33 @@ export default function ProductEdit() {
 			</p>
 			{messages.length > 0 && <Alert variant='success'>{messages[0]}</Alert>}
 			<Form onSubmit={handleSubmit}>
-				<label>ID</label>
-				<Form.Control type="text" value={productId} disabled />
-				<label>Name</label>
-				<Form.Control type="text" placeholder={product.name} onChange={e => setPName(e.target.value)} />
-				<label>Price</label>
-				<Form.Control type="number" placeholder={product.price} onChange={e => setPPrice(e.target.value)} />
+				<Form.Group>
+					<Form.Label>ID</Form.Label>
+					<Form.Control type="text" value={productId} disabled />
+				</Form.Group>
+				<Form.Group>
+					<Form.Label>Name</Form.Label>
+					<Form.Control type="text" value={product.name} onChange={handleChange} />
+				</Form.Group>
 				<br />
-				<label>Category</label>
-				<Form.Select onChange={e => setPCategoryId(e.target.value)}>
-					<option>-- Select a category --</option>
-					{
-						categories.map((category) => (
-							<option key={category.id} value={category.id} selected={product.categoryId === category.id ? 'true' : 'undefined'}>{category.name}</option>
-						))
-					}
-				</Form.Select>
-				<br /> <br />
-				<Button variant="primary" type="submit">Create</Button>
+				<Form.Group>
+					<Form.Label>Price</Form.Label>
+					<Form.Control type="number" value={product.price} onChange={handleChange} />
+				</Form.Group>
+				<br />
+				<Form.Group>
+					<Form.Label>Category</Form.Label>
+					<Form.Control as='select' defaultValue={product.categoryId} onChange={handleChange}>
+						<option value='default' disabled>-- Select a category --</option>
+						{
+							categories.map((category) => (
+								<option key={category.id} value={category.id}>{category.name}</option>
+							))
+						}
+					</Form.Control>
+				</Form.Group>
+				<br />
+				<Button variant="primary" type="submit" disabled={!isUpdate}>Update</Button>
 			</Form>
 		</Col>
 	);

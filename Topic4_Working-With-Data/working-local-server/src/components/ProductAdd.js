@@ -25,7 +25,7 @@ export default function ProductPost() {
 			price: parseInt(pPrice),
 			categoryId: parseInt(pCategoryId)
 		}).then(res => {
-			if(res.status === 201){
+			if (res.status === 201) {
 				setMessages(['Product created successfully']);
 			}
 			console.log(res.data);
@@ -40,23 +40,32 @@ export default function ProductPost() {
 			</p>
 			{messages.length > 0 && <Alert variant='success'>{messages[0]}</Alert>}
 			<Form onSubmit={handleSubmit}>
-				<label>ID</label>
-				<Form.Control type="text" disabled/>
-				<label>Name</label>
-				<Form.Control type="text" placeholder="Enter name"  onChange={e => setPName(e.target.value)}/>
-				<label>Price</label>
-				<Form.Control type="number" placeholder="Enter price" onChange={e => setPPrice(e.target.value)}/>
+				{/* <Form.Group>
+					<Form.Label>ID</Form.Label>
+					<Form.Control type="text" disabled />
+				</Form.Group> */}
+				<Form.Group>
+					<Form.Label>Name</Form.Label>
+					<Form.Control type="text" placeholder="Enter name" onChange={e => setPName(e.target.value)} />
+				</Form.Group>
 				<br />
-				<label>Category</label>
-				<Form.Select onChange={e => setPCategoryId(e.target.value)}>
-					<option>-- Select a category --</option>
-					{
-						categories.map((category) => (
-							<option key={category.id} value={category.id}>{category.name}</option>
-						))
-					}
-				</Form.Select>
-				<br /> <br />
+				<Form.Group>
+					<Form.Label>Price</Form.Label>
+					<Form.Control type="number" placeholder="Enter price" onChange={e => setPPrice(e.target.value)} />
+				</Form.Group>
+				<br />
+				<Form.Group>
+					<Form.Label>Category</Form.Label>
+					<Form.Control as='select' defaultValue={'default'} onChange={e => setPCategoryId(e.target.value)}>
+						<option value='default' disabled>-- Select a category --</option>
+						{
+							categories.map((category) => (
+								<option key={category.id} value={category.id}>{category.name}</option>
+							))
+						}
+					</Form.Control>
+				</Form.Group>
+				<br />
 				<Button variant="primary" type="submit">Create</Button>
 			</Form>
 		</Col>

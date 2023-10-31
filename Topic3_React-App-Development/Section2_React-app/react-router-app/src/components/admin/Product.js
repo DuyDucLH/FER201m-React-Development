@@ -90,8 +90,8 @@ export function CreateProduct({ setProductList }) {
 				<Col>
 					<Form.Group style={{ marginTop: '10px' }}>
 						<Form.Label style={{ marginRight: '15px' }}>Status</Form.Label>
-						<Form.Check inline type='radio' label='Yes' id='yes' />
-						<Form.Check inline type='radio' label='No' id='no' />
+						<Form.Check inline type='radio' label='Yes' id='Yes' name='status' />
+						<Form.Check inline type='radio' label='No' id='No' name='status'/>
 					</Form.Group>
 				</Col>
 			</Row>
