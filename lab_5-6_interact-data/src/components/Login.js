@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useState } from 'react';
 import { Alert, Button, Col, Container, Form, Row, Spinner } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
@@ -38,28 +39,45 @@ export default function Login({ setUser }) {
 
 		if (username !== '' && password !== '') {
 			setLoadingData(true);
-			fetch('https://dummyjson.com/auth/login', {
-				method: 'POST',
-				headers: { 'Content-Type': 'application/json' },
-				body: JSON.stringify({
-					'username': username,
-					'password': password,
+			
+			let userLogin = {
+				'username': username,
+				'password': password,
+			}
+
+			axios.post('https://dummyjson.com/auth/login', userLogin)
+				.then(res => {					//Only execute of if receive status 200-299
+					setUser(res.data);
+					navigate('/carts/user/' + res.data.id);
 				})
-			})
-				.then(res => res.json())
-				.then(data => {
-					console.log(data);
-					if (data.message) {
-						setLoginError(data.message);
-					} else {
-						setUser(data);
-						navigate('/carts/user/' + data.id);
-					}
+				.catch(err => {					//Skip then() and execute catch if status code 400-499, 500-599
+					setLoginError(err.response.data.message);
 				})
-				.catch(err => console.log(err))
 				.finally(() =>
 					setLoadingData(false)
 				);
+
+			// fetch('https://dummyjson.com/auth/login', {
+			// 	method: 'POST',
+			// 	headers: { 'Content-Type': 'application/json' },
+			// 	body: JSON.stringify({
+			// 		'username': username,
+			// 		'password': password,
+			// 	})
+			// })
+			// 	.then(res => res.json())
+			// 	.then(data => {
+			// 		if (data.message) {
+			// 			setLoginError(data.message);
+			// 		} else {
+			// 			setUser(data);
+			// 			navigate('/carts/user/' + data.id);
+			// 		}
+			// 	})
+			// 	.finally(() =>
+			// 		setLoadingData(false)
+			// 	);
+			
 		}
 	}
 
