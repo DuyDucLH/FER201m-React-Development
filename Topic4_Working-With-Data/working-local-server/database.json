@@ -14,8 +14,8 @@
     },
     {
       "id": 3,
-      "name": "iPhone 15 Pro",
-      "price": 489,
+      "name": "iPhone 15 Proa",
+      "price": "489123",
       "categoryId": 1
     },
     {
@@ -25,28 +25,16 @@
       "categoryId": 2
     },
     {
-      "name": "aa",
-      "price": 123,
+      "name": "Mobile 1",
+      "price": 123123,
       "categoryId": 1,
       "id": 5
     },
     {
-      "name": "aaa",
-      "price": 123,
-      "categoryId": 1,
+      "name": "Laptop 1",
+      "price": 123123,
+      "categoryId": 2,
       "id": 6
-    },
-    {
-      "name": "asdas",
-      "price": 123,
-      "categoryId": 1,
-      "id": 7
-    },
-    {
-      "name": "a",
-      "price": 0,
-      "categoryId": 1,
-      "id": 8
     }
   ],
   "categories": [

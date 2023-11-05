@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Alert, Button, Col, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 export default function ProductPost() {
@@ -11,6 +11,7 @@ export default function ProductPost() {
 	const [pCategoryId, setPCategoryId] = useState(1);
 	const [messages, setMessages] = useState([]);
 
+	const navigate = useNavigate();
 
 	useEffect(() => {
 		axios.get('http://localhost:9999/categories')
@@ -27,8 +28,10 @@ export default function ProductPost() {
 		}).then(res => {
 			if (res.status === 201) {
 				setMessages(['Product created successfully']);
+				setTimeout(() => {
+					navigate('/products');
+				}, 1000);
 			}
-			console.log(res.data);
 		}).catch(err => console.log(err));
 	}
 

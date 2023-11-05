@@ -9,6 +9,15 @@
 		shift() - Removes the first element from an array
 		unshift() - Adds one or more elements to the beginning of an array
 		splice() - Changes the contents of an array by removing or replacing existing elements and/or adding new elements
+		array.splice(index, howmany, item1, ....., itemX)
+		index	Required.
+		The position to add/remove items.
+		Negative value defines the position from the end of the array.
+		howmany	Optional.
+		Number of items to be removed.
+		item1, ..., itemX	Optional.
+		New elements(s) to be added.
+
 		sort() - Sorts the elements of an array in place
 		reverse() - Reverses the order of the elements of an array in place
 

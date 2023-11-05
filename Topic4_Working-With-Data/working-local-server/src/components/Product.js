@@ -1,14 +1,17 @@
-import { useEffect, useState } from 'react';
-import { Table, Col, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { useEffect, useState } from 'react';
+import { Button, Col, Table } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default function Product() {
-
 	const [categories, setCategories] = useState([]);
 	const [products, setProduct] = useState([]);
 
 	useEffect(() => {
+		getData();
+	}, []);
+
+	function getData() {
 		axios.get('http://localhost:9999/categories')
 			.then(res => {
 				setCategories(res.data)
@@ -17,12 +20,22 @@ export default function Product() {
 					.catch(err => console.log(err));
 			})
 			.catch(err => console.log(err));
-	}, []);
+	}
+
+	function handleDetele(productId) {
+		axios.delete('http://localhost:9999/products/' + productId)
+			.then(res => {
+				if (res.status === 200) {
+					getData();
+				}
+			})
+			.catch(err => console.log(err));
+	}
 
 	return (
 		<Col>
 			<h2>Product</h2>
-			<p style={{textAlign: 'right'}}>
+			<p style={{ textAlign: 'right' }}>
 				<Button as={Link} to="/products/add">Create new product</Button>
 			</p>
 			<Table>
@@ -46,7 +59,7 @@ export default function Product() {
 								<Link to={`/products/edit/${product.id}`}>Edit</Link>
 							</td>
 							<td>
-								<Link to={`/products/delete/${product.id}`}>Delete</Link>
+								<Link onClick={() => handleDetele(product.id)}>Delete</Link>
 							</td>
 						</tr>
 					))}
